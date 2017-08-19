@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Game</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Latest compiled and minified CSS -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+	<div id="main-body">
+		
+		<!-- start page div -->
+		<div id="startPage">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="jumbotron" id="startPageText">
+					  <h1>Harry Potter Trivia!</h1>
+					  <button type="button" class="btn btn-default" id="startButton">Click here to start!</button>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<br>
+						<p>&copy Copyright Mollie Chacon  2017</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- game page div -->
+		<div id="gamePage">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="jumbotron">
+					  <h1>Harry Potter Trivia!</h1>
+					  <h2 id="timerText">Time Remaining: <span id="timerCount">60 seconds</span></h2>
+					</div>
+				</div>
+			</div>
+		
+
+			<div id="questions">
+				<div class="row">
+					<div class="col-lg-12">
+						<h3 class="question" id="question1">
+							Which of the following is not a Hogwarts school house?
+						</h3>
+						<div class="radio-inline">
+							<label class="radio-inline">
+							  <input type="radio" name="q1Options" id="q1Wrong1" value="option1">Slytherin  
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="q1Options" id="q1Wrong2" value="option2">Hufflepuff  
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="q1Options" id="q1Wrong3" value="option3">Ravenclaw  
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="q1Options" id="q1Correct" value="option4">Durmstrang  
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<h3 class="question" id="question2">
+							What is Ron Weasley's mother's first name?
+						</h3>
+						<div class="radio-inline">
+							<label class="radio-inline">
+							  <input type="radio" name="q2Options" id="q2Wrong1" value="option1">Nymphadora
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="q2Options" id="q2correct" value="option2">Molly
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="q2Options" id="q2Wrong2" value="option3">Lavender
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="q2Options" id="q2Wrong3" value="option4">Lily
+							</label>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">	
+					<div class="col-lg-12">
+						<h3 class="question" id="question3">
+							What substance, when injested, allows one to take the physical form of another?
+						</h3>
+						<label class="radio-inline">
+						  <input type="radio" name="q3Options" id="q3Correct" value="option1">Polyjuice Potion
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q3Options" id="q3Wrong1" value="option2">Veritaserum
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q3Options" id="q3Wrong2" value="option3">Felix Felicis
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q3Options" id="q3Wrong3" value="option4">A Bezoar
+						</label>
+					</div>
+				</div>
+					
+				<div class="row">
+					<div class="col-lg-12">
+						<h3 class="question" id="question4">
+							What are Hermione's parents' occupations?
+						</h3>
+						<label class="radio-inline">
+						  <input type="radio" name="q4Options" id="q4Wrong1" value="option1">Aurors
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q4Options" id="q4Wrong2" value="option2">Accountants
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q4Options" id="q4Wrong3" value="option3">Journalists
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q4Options" id="q4Correct" value="option4">Dentists
+						</label>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<h3 class="question" id="question5">
+							Which of these shops would you visit to purchase a wand?
+						</h3>
+						<label class="radio-inline">
+						  <input type="radio" name="q5Options" id="q5Wrong1" value="option1">Gringotts
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q5Options" id="q5Wrong2" value="option2">Flourish and Blotts
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q5Options" id="q5Wrong3" value="option3">Borgin and Burke's
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q5Options" id="q5Correct" value="option4">Ollivander's
+						</label>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<h3 class="question" id="question6">
+							Which of the following is not a Deathly Hallow?
+						</h3>
+						<label class="radio-inline">
+						  <input type="radio" name="q6Options" id="q6Wrong1" value="option1">Resurrection Stone
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q6Options" id="q6Wrong2" value="option2">Cloak of Invisibility
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q6Options" id="q6Correct" value="option3">Sorcerer's Stone
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q6Options" id="q6Wrong3" value="option4">Elder Wand
+						</label>
+					</div>
+				</div>	
+			
+				<div class="row">
+					<div class="col-lg-12">
+						<h3 class="question" id="question7">
+							Which of these curses left Neville Longbottom's parents permanently disabled?
+						</h3>
+						<label class="radio-inline">
+						  <input type="radio" name="q7Options" id="q7Correct" value="option1">Cruciatus
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q7Options" id="q7Wrong1" value="option2">Avada Kedavra
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q7Options" id="q7Wrong2" value="option3">Imperio
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q7Options" id="q7Wrong3" value="option4">The Unforgivable Curse
+						</label>
+					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-lg-12">
+						<h3 class="question" id="question8">
+							Which hogwarts student was killed during the Triwizard Tournament?
+						</h3>
+						<label class="radio-inline">
+						  <input type="radio" name="q8Options" id="q8Correct" value="option1">Cedric Diggory
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q8Options" id="q8Wrong1" value="option2">Fred Weasley
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q8Options" id="q8Wrong2" value="option3">Lavender Brown
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="q8Options" id="q8Wrong3" value="option4">Fleur Delacour
+						</label>
+					</div>
+				</div>	
+			</div>
+
+			<footer>
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<br>
+						<p>&copy Copyright Mollie Chacon  2017</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+		
+		<!-- end page div -->
+		<div id="endPage">
+			<div class="row">
+				<div class=col-lg-12>
+					<div class="jumbotron" id="endPageText">
+					  <h1>Harry Potter Trivia!</h1>
+					 	<h2>All Done!</h2>
+						<h3 id="correctAnswers">Correct Answers:</h3>
+						<h3 id="incorrectAnswers">Incorrect Answers:</h3>
+						<h3 id="unanswered">Unanswered:</h3>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<br>
+						<p>&copy Copyright Mollie Chacon  2017</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+	</div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="assets/javascript/app.js"></script>
+
+	
+</body>
+</html>
