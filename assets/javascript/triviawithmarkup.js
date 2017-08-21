@@ -15,13 +15,15 @@ $("#startButton").on("click", function() {
 	$("#startPage").hide();
 	$("#gamePage").show();
 	setInterval(countdown, 1 * 1000);
+	// research setInterval
+	// return??
 })
 
 function countdown () {
 	counter--;
 	$("#timerCount").html(counter + " Seconds");
+	// add a done button if user finishes before time runs out?
 	if(counter === 0) {
-		clearInterval(countdown);
 		gameOver();
 		$("#gamePage").hide();
 		$("#endPage").show();
@@ -39,27 +41,11 @@ function gameOver () {
 	var q7 = $("input:radio[name='q7Options']:checked").val();
 	var q8 = $("input:radio[name='q8Options']:checked").val();
 
-
-	// updating vars for correct/incorrect/unanswered
-	// consider DRY if have time!!! 
-		/*tried running the following for loop with no luck!!!
-		all answers end up in the "else" case. Curious as to why...:
-
-		var answers = [q1, q2, q3, q4, q5, q6, q7, q8];
-			console.log(answers);
-		for (i=0; i<answers.length; i++) {
-				if (i === undefined) {
-					numUnanswered++;
-				} else if (i === "correct") {
-					numCorrect++;
-				} else {
-					numWrong++;
-				}
-			}*/
-				
+	// updating var's for correct/incorrect/unanswered
+	// consider DRY if have time!!!
 	if (q1 === undefined){
 		numUnanswered++;
-	} else if (q1 === "correct") {
+	} else if (q1 === "option4") {
 		numCorrect++;
 	} else {
 		numWrong++;
@@ -67,7 +53,7 @@ function gameOver () {
 
 	if (q2 === undefined){
 		numUnanswered++;
-	} else if (q2 === "correct") {
+	} else if (q2 === "option2") {
 		numCorrect++;
 	} else {
 		numWrong++;
@@ -75,7 +61,7 @@ function gameOver () {
 
 	if (q3 === undefined){
 		numUnanswered++;
-	} else if (q3 === "correct") {
+	} else if (q3 === "option1") {
 		numCorrect++;
 	} else {
 		numWrong++;
@@ -83,7 +69,7 @@ function gameOver () {
 
 	if (q4 === undefined){
 		numUnanswered++;
-	} else if (q4 === "correct") {
+	} else if (q4 === "option4") {
 		numCorrect++;
 	} else {
 		numWrong++;
@@ -91,7 +77,7 @@ function gameOver () {
 
 	if (q5 === undefined){
 		numUnanswered++;
-	} else if (q5 === "correct") {
+	} else if (q5 === "option4") {
 		numCorrect++;
 	} else {
 		numWrong++;
@@ -99,7 +85,7 @@ function gameOver () {
 
 	if (q6 === undefined){
 		numUnanswered++;
-	} else if (q6 === "correct") {
+	} else if (q6 === "option3") {
 		numCorrect++;
 	} else {
 		numWrong++;
@@ -107,7 +93,7 @@ function gameOver () {
 
 	if (q7 === undefined){
 		numUnanswered++;
-	} else if (q7 === "correct") {
+	} else if (q7 === "option1") {
 		numCorrect++;
 	} else {
 		numWrong++;
@@ -115,7 +101,7 @@ function gameOver () {
 
 	if (q8 === undefined){
 		numUnanswered++;
-	} else if (q8 === "correct") {
+	} else if (q8 === "option1") {
 		numCorrect++;
 	} else {
 		numWrong++;
